@@ -1,0 +1,116 @@
+#post {
+	font-size: 120%;
+	
+	width: 90%;
+	margin: 0 auto;
+	max-width: 960px;
+	@media only screen and (min-width: $cut) {
+	  width: 80%;
+	}
+	svg {
+	  width: 60px !important;
+	  height: auto;
+	}
+  }
+
+  .post-paragraph {
+	text-align: left;
+	margin: 5px auto;
+	h1 {
+	  font-weight: 400;
+	}
+  }
+
+  .post-photograph {
+	text-align: center;
+	margin: 5px auto;
+	h1 {
+	  font-weight: 400;
+	}
+  }
+
+/* Spacing */
+.post h1, h3, h4, h5, p, .post-body ul, #post-list li, pre {
+margin-bottom: 20px;
+}
+
+/* Sharing*/
+#sharing {
+	// float: right;
+	margin: -2px;
+}
+
+#sharing a {
+	font-size: 20px;
+	font-size: 13px;
+	margin-left: 1px;
+	margin-top: 4px;
+	padding: 6px 10px;
+	border-radius: 4px;
+	margin-left: 2px;
+	color: #fff;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+#sharing a.facebook {
+	background: #4361b3;
+  }
+  #sharing a.twitter {
+	background: #4fafed;
+  } 
+
+#sharing a:hover {
+	/*color: #444;*/
+	opacity: 0.8;
+}
+
+/* Post Navigation */
+#post-nav {
+	border-top:1px solid #eee;
+	text-align:center;
+	padding-top:20px;
+	font-size:13px;
+	font-weight:500;
+	margin-top: 40px;
+}
+
+#post-nav span {
+	-webkit-transition: all 0.1s linear;
+	-moz-transition: all 0.1s linear;
+	-ms-transition: all 0.1s linear;
+	-o-transition: all 0.1s linear;
+	transition: all 0.1s linear;
+	position: relative;
+}
+
+#post-nav span.prev {
+	float: left;
+}
+
+#post-nav span.next {
+	float: right;
+}
+
+#post-nav span .arrow {
+	position: relative;
+	padding: 1px;
+}
+
+#post-nav span.prev:hover .arrow {
+	left: -4px;
+}
+
+#post-nav span.next:hover .arrow {
+	right: -4px;
+}
+
+#post-nav span.prev:hover {
+	left: -3px;
+}
+
+#post-nav span.next:hover {
+	right: -3px;
+}
+
+
