@@ -1,10 +1,3 @@
 source "https://rubygems.org"
 gem 'github-pages'
-gem 'dotenv'
-gem 'html-proofer'
-gem 'httparty'
-gem 'hashie'
-gem 'polylines'
-gem 'rake'
-gem 'strava-ruby-client'
-gem 'wdm', '~> 0.1.0'
+
