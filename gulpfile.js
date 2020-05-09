@@ -60,10 +60,10 @@ gulp.task('fonts', function() {
  * Minify images
  */
 gulp.task('imagemin', function() {
-	return gulp.src('assets/**/*.{jpg,png,gif}')
+	return gulp.src('assets/img/**/*.{jpg,png,gif}')
 		.pipe(plumber())
 		.pipe(imagemin({ optimizationLevel: 3, progressive: true, interlaced: true }))
-		.pipe(gulp.dest('assets/img/'));
+		.pipe(gulp.dest('assets/minified/images'));
 });
 
 /**

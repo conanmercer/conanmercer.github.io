@@ -1,25 +1,138 @@
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #1a222c;
+$menu-items: 5;
+$background-color: white;
+$indicator-color: #e82d00;
+
+$transition-speed: 1s;
+
+$width: 100% / $menu-items; 
+$menu-items-loop-offset: $menu-items - 1; 
+
+.PrimaryNav {
+  @extend %cf;
+  list-style-type: none;
+  margin: 0 auto;
+  max-width: 720px;
+  padding: 0;
+  overflow: visible;
+  background-color: white;
 }
-nav li {
-    float: left;
-}
-nav a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-nav li.active a {
-    color: #FFD700;
-}
-.active {
-    background-color: #4CAF50;
+
+.Nav-item {
+  background-color: white;
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: $width; //dynamic width
+  text-align: center;
+
+  &:first-child {
+    border-radius: 3px 0 0 3px;
   }
 
+  &:last-child {
+    border-radius: 0 3px 3px 0;
+  }
 
+  &.is-active a {
+    color: $indicator-color;
+  }
+
+  a {
+    color: black;
+    text-align: center;
+    display: block;
+    padding: 14px 16px;
+    text-decoration: none;
+
+    &:hover {
+      color: $indicator-color;
+    }
+  }
+}
+
+
+// indicator
+.with-indicator {
+  position: relative;
+  z-index: 0;
+
+  .Nav-item {
+    &:last-child {
+      &:before, &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        pointer-events: none;
+        transition: left #{$transition-speed} ease;
+      }
+      &:before {
+        border: 6px solid transparent;
+        border-top-color: $indicator-color;
+        width: 0;
+        height: 0;
+        top: 0;
+        left: ($width/2);
+        margin-left: -3px;
+      }
+      &:after {
+        background: $indicator-color;
+        top: -6px;
+        bottom: -6px;
+        left: 0;
+        width: $width;
+        z-index: -1;
+      }
+    }
+  }
+
+  @for $i from 1 through $menu-items-loop-offset {
+    // when the Nav item "is active", make the indicator line up with the navigation item.
+    .Nav-item:nth-child(#{$i}).is-active ~ .Nav-item:last-child:after {
+      left:($width*$i)-$width;
+    }
+    .Nav-item:nth-child(#{$i}).is-active ~ .Nav-item:last-child:before
+    {
+      left:($width*$i)+($width/2)-$width; // this ensures the triangle lines up to the menu.
+    }
+}
+
+// movement
+    @for $i from 1 through $menu-items-loop-offset {
+    // We have to use !important to make the hovers overide if the last:child is the active or hovered
+    .Nav-item:nth-child(#{$i}):hover ~ .Nav-item:last-child:after {
+      left:($width*$i)-$width !important;
+    }
+
+    .Nav-item:nth-child(#{$i}):hover ~ .Nav-item:last-child:before{
+      left:($width*$i)+($width/2)-$width !important;
+    }
+  }
+ 
+    // this could be nested in the original .Nav-item
+    .Nav-item {
+        &:last-child {
+          // make sure the last-child talks to itself
+          &:hover, &.is-active {
+            &:before {
+             // we have to use important because the sibling selctor is more specific.
+              left: (100%-$width)+($width/2) !important;
+            }
+            &:after{
+              left: 100%-$width !important;
+            }
+          }        
+        }
+    }
+}
+
+
+// Global resets
+%cf:before,
+%cf:after {
+    content: " ";
+    display: table;
+}
+%cf:after {
+    clear: both;
+}
