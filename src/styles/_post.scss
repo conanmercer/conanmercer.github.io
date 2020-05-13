@@ -29,6 +29,10 @@
 	}
   }
 
+  .post-pdf {
+	text-align:center;
+  }
+
 /* Spacing */
 .post h1, h3, h4, h5, p, .post-body ul, #post-list li, pre {
 margin-bottom: 20px;
@@ -66,6 +70,28 @@ margin-bottom: 20px;
 }
 
 /* Post Navigation */
+
+.PageNavigation {
+	font-size: 14px;
+	color: black;
+	display: block;
+	width: auto;
+	overflow: hidden;
+}
+  
+.PageNavigation a {
+	display: block;
+	color: black;
+	width: 50%;
+	float: left;
+	margin: 1em 0;
+}
+  
+.PageNavigation .next {
+	color: black;
+	text-align: right;
+}
+
 #post-nav {
 	border-top:1px solid #eee;
 	text-align:center;

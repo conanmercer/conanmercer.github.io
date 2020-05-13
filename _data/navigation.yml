@@ -1,11 +1,7 @@
-# - title: "&lt;"
-#   url: http://www.conanmercer.com
 - title: Home
   url: /
 - title: Projects
   url: /projects.html
-- title: Speaking
-  url: /speaking.html
 - title: Running
   url: /running.html
 - title: Photos
