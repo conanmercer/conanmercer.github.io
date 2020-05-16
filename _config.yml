@@ -14,4 +14,4 @@ email: conan.mercer1@gmail.com
 google-analytics:
   id: "UA-148731075-1"
 
-exclude: ['package.json', 'src' , 'node_modules']
+exclude: ["package.json", "src", "node_modules"]

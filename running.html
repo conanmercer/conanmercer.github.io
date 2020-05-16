@@ -1,17 +1,17 @@
 ---
-layout: post
+layout: post-list
 title: Running
 ---
 <h1>Running</h1>
 
-This is my running blog. I log all of my runs on Strava, <a href="https://www.strava.com/athletes/17590055">please follow me</a> 
+This is my running blog. I log all of my runs on Strava, <a href="https://www.strava.com/athletes/17590055" target="_blank">please follow me</a> 
 
 {% assign sorted-posts = site.posts | where: "categories","running" %}
 {% for post in sorted-posts limit: 5 %}
   {% assign currentdate = post.date | date: "%Y" %}
   {% if currentdate != date %}
     {% unless forloop.first %}</ul>{% endunless %}
-    <h1 id="y{{post.date | date: "%Y"}}">{{ currentdate }}</h1>
+    <h3 id="y{{post.date | date: "%Y"}}">{{ currentdate }}</h3>
     <ul>
     {% assign date = currentdate %}
   {% endif %}
