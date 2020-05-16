@@ -11,10 +11,10 @@
 }
 
 .header {
-  font-family: 'montserrat', sans-serif;
+  font-family: "montserrat", sans-serif;
   z-index: 1;
   text-align: center;
-  color:#FFF;
+  color: #fff;
   position: absolute;
   top: 10%;
   left: 50%;
@@ -26,8 +26,8 @@
     font-size: 50px;
     display: block;
     line-height: 1;
-    color: #FFF;
-    @media only screen and (min-width:$cut){
+    color: #fff;
+    @media only screen and (min-width: $cut) {
       margin: 0;
       font-size: 76px;
     }
@@ -36,9 +36,9 @@
     font-size: 20px;
     display: block;
     line-height: 1;
-    color: #FFF;
+    color: #fff;
     margin-top: 10px;
-    @media only screen and (min-width:$cut){
+    @media only screen and (min-width: $cut) {
       font-size: 34px;
     }
   }
@@ -47,11 +47,11 @@
 .header-links {
   margin: 10px;
   .link {
-    color: #FFF;
+    color: #fff;
     text-decoration: none;
     font-size: 15px;
     margin: 10px;
-    @media only screen and (min-width:$cut){
+    @media only screen and (min-width: $cut) {
       font-size: 20px;
     }
   }
@@ -73,25 +73,25 @@
   }
   .icon {
     text-align: center;
-    color: #FFF;
+    color: #fff;
     width: 20px;
     height: 20px;
     font-size: 20px;
     padding: 10px;
     margin: 5px;
     border-radius: 50%;
-    border: 2px solid #FFF;
-    transition: all .5s;
+    border: 2px solid #fff;
+    transition: all 0.5s;
     &:hover {
       color: $main;
-      background: #FFF;
+      background: #fff;
     }
     &:active {
       color: $main;
-      background: #FFF;
+      background: #fff;
     }
 
-    @media only screen and (min-width:$cut) {
+    @media only screen and (min-width: $cut) {
       width: 30px;
       height: 30px;
       font-size: 30px;

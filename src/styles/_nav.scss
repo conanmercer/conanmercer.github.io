@@ -4,8 +4,8 @@ $indicator-color: #e82d00;
 
 $transition-speed: 1s;
 
-$width: 100% / $menu-items; 
-$menu-items-loop-offset: $menu-items - 1; 
+$width: 100% / $menu-items;
+$menu-items-loop-offset: $menu-items - 1;
 
 .PrimaryNav {
   @extend %cf;
@@ -51,7 +51,6 @@ $menu-items-loop-offset: $menu-items - 1;
   }
 }
 
-
 // indicator
 .with-indicator {
   position: relative;
@@ -59,8 +58,9 @@ $menu-items-loop-offset: $menu-items - 1;
 
   .Nav-item {
     &:last-child {
-      &:before, &:after {
-        content: '';
+      &:before,
+      &:after {
+        content: "";
         display: block;
         position: absolute;
         pointer-events: none;
@@ -89,50 +89,50 @@ $menu-items-loop-offset: $menu-items - 1;
   @for $i from 1 through $menu-items-loop-offset {
     // when the Nav item "is active", make the indicator line up with the navigation item.
     .Nav-item:nth-child(#{$i}).is-active ~ .Nav-item:last-child:after {
-      left:($width*$i)-$width;
+      left: ($width * $i)-$width;
     }
-    .Nav-item:nth-child(#{$i}).is-active ~ .Nav-item:last-child:before
-    {
-      left:($width*$i)+($width/2)-$width; // this ensures the triangle lines up to the menu.
-    }
-}
-
-// movement
-    @for $i from 1 through $menu-items-loop-offset {
-    // We have to use !important to make the hovers overide if the last:child is the active or hovered
-    .Nav-item:nth-child(#{$i}):hover ~ .Nav-item:last-child:after {
-      left:($width*$i)-$width !important;
-    }
-
-    .Nav-item:nth-child(#{$i}):hover ~ .Nav-item:last-child:before{
-      left:($width*$i)+($width/2)-$width !important;
+    .Nav-item:nth-child(#{$i}).is-active ~ .Nav-item:last-child:before {
+      left: ($width * $i)+
+        ($width/2)-$width; // this ensures the triangle lines up to the menu.
     }
   }
- 
-    // this could be nested in the original .Nav-item
-    .Nav-item {
-        &:last-child {
-          // make sure the last-child talks to itself
-          &:hover, &.is-active {
-            &:before {
-             // we have to use important because the sibling selctor is more specific.
-              left: (100%-$width)+($width/2) !important;
-            }
-            &:after{
-              left: 100%-$width !important;
-            }
-          }        
-        }
-    }
-}
 
+  // movement
+  @for $i from 1 through $menu-items-loop-offset {
+    // We have to use !important to make the hovers overide if the last:child is the active or hovered
+    .Nav-item:nth-child(#{$i}):hover ~ .Nav-item:last-child:after {
+      left: ($width * $i)-$width !important;
+    }
+
+    .Nav-item:nth-child(#{$i}):hover ~ .Nav-item:last-child:before {
+      left: ($width * $i)+ ($width/2)-$width !important;
+    }
+  }
+
+  // this could be nested in the original .Nav-item
+  .Nav-item {
+    &:last-child {
+      // make sure the last-child talks to itself
+      &:hover,
+      &.is-active {
+        &:before {
+          // we have to use important because the sibling selctor is more specific.
+          left: (100%-$width)+ ($width/2) !important;
+        }
+        &:after {
+          left: 100%-$width !important;
+        }
+      }
+    }
+  }
+}
 
 // Global resets
 %cf:before,
 %cf:after {
-    content: " ";
-    display: table;
+  content: " ";
+  display: table;
 }
 %cf:after {
-    clear: both;
+  clear: both;
 }
