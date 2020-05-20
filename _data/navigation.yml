@@ -1,9 +1,9 @@
 - title: <i class="fas fa-home"></i> Home
-  url: /
+  url: /index.html
 - title: <i class="fas fa-project-diagram"></i> Projects
-  url: /projects.html
+  url: /blog
 - title: <i class="fas fa-running"></i> Running
-  url: /running.html
+  url: /running
 - title: <i class="fas fa-camera-retro"></i> Photos
-  url: /photography.html
+  url: /photography
 
