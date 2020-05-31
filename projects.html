@@ -6,7 +6,7 @@ permalink: /blog
 <h1>Projects</h1>
 
 {% assign sorted-posts = site.posts | where: "categories","blog" %}
-{% for post in sorted-posts limit: 5 %}
+{% for post in sorted-posts limit: 10 %}
 {% assign currentdate = post.date | date: "%Y" %}
 {% if currentdate != date %}
 {% unless forloop.first %}</ul>{% endunless %}
