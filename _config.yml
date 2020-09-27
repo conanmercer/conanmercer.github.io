@@ -1,13 +1,13 @@
 # Site settings
-title: Dr Conan Mercer
+title: Conan Mercer
 description: Resume and Blog
 # baseurl: "" # the subpath of your site, e.g. /blog
 # url: "localhost:3000" # the base hostname & protocol for your site e.g. http://yoursite.com
 
 # User settings
-username: Dr Conan Mercer
-user_description: <p>I am an innovative Scientist with vast and deep experience, packed full of creativity. Lately I have been immersed in <b>quality assurance engineering</b> working for <a href="https://www.theprojectgroup.com/en/" target="_blank">The Project Group</a>, a Munich headquartered company creating project, portfolio and resource management software.<b> I am behind all the QA related processes for 4 products.</b></p> <p>I have over <b>5 year’s experience</b> in managing international projects with a complex nature. I have very strong technical abilities in novel electrochemical biosensor research that includes <b>embedded systems programming</b>. During my Ph.D I acquired very strong skills in <b>public speaking, data analysis and project management</b>. I have a proven ability to apply engineering principles and techniques to solve a variety of scientific problems.</p>
-user_title: Creative Programmer
+username: Conan Mercer
+user_description: <p>I am an innovative Applied Scientist with vast and deep experience, packed full of creativity. Lately I have been immersed in <b>quality assurance engineering</b> working for <a href="https://www.theprojectgroup.com/en/" target="_blank">The Project Group</a>, a Munich headquartered company creating project, portfolio and resource management software.<b> I am behind all the QA related processes for 4 products.</b></p> <p>I have over <b>5 year’s experience</b> in managing international projects with a complex nature. I have very strong technical abilities in novel electrochemical biosensor research that includes <b>embedded systems programming</b>. During my Ph.D I acquired very strong skills in <b>public speaking, data analysis and project management</b>. I have a proven ability to apply engineering principles and techniques to solve a variety of scientific problems.</p>
+user_title: Applied Scientist
 email: conan.mercer1@gmail.com
 
 # Google-analytics
