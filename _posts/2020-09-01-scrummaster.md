@@ -75,4 +75,4 @@ Your certificate is also searchable and verifiable by anyone via the Scrum.org w
   <figcaption>Figure 2 - PSM1 Certificate </figcaption>
   </figure>
 
-Once you have your certificate, the journey does not end here! Applying the Scrum framework in complex projects and organizations is a very challenging thing to do. The guide is short and easy to read but to fully comprehend it and apply it takes time, dedication and patience. I look forward to study for and taking the PSM2 exam soon, but for now, Scrum on!
+Once you have your certificate, the journey does not end here! Applying the Scrum framework in complex projects and organizations is a very challenging thing to do. The guide is short and easy to read but to fully comprehend it and apply it takes time, dedication and patience. I look forward to study for and take the PSM2 exam soon, but for now, Scrum on!
