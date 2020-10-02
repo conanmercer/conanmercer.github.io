@@ -1,7 +1,7 @@
 ---
 layout: post
 author: Conan Mercer
-title: "My Road To Scrum Master Certification"
+title: "My Road To Professional Scrum Master I Certification"
 categories: [blog, certification]
 tags: certification
 ---
