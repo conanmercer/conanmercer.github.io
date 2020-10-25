@@ -16,5 +16,5 @@ tags: certification
   <p><i>{{ page.date | date_to_string }} - {{ page.author }}</i></p>
 
 <div id="container">
-<iframe src="{{site.baseurl}}/_posts/WebScraper1.html" width="100%" height="100%" scrolling="no"></iframe>
+<iframe src="{{site.baseurl}}/assets/html/WebScraper1.html" width="100%" height="100%" scrolling="no"></iframe>
 </div>
