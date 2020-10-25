@@ -1,7 +1,7 @@
 ---
 layout: post
 author: Conan Mercer
-title: "Web Scraper"
+title: "A Python Web Scraper"
 categories: [blog, data science]
 tags: data science
 ---
@@ -19,5 +19,10 @@ tags: data science
 <div class="post-paragraph">
   <h1>{{ page.title }}</h1>
   <p><i>{{ page.date | date_to_string }} - {{ page.author }}</i></p>
+</div>
+
+<div class="post-notebook">
 
 <iframe src="{{site.baseurl}}/assets/html/WebScraper.html" width="100%" scrolling="no" frameBorder="0" onload="resizeIframe(this)"></iframe>
+
+</div>
