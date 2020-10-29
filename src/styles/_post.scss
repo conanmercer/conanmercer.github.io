@@ -22,7 +22,9 @@
 }
 
 .post-notebook {
-  width: 100%;
+  position: relative;
+  margin-left: -240px;
+  width: 150%;
   display: flex;
   align-items: center;
   justify-content: center;

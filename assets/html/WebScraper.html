@@ -13110,7 +13110,7 @@ Urllib is a Python package that collects several modules for working with URLs:<
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Next a variable is created to store the website URL of interest. The example used here is lifeinformatica.com, a Spanish website that sells computer components. This project will focus on computer central processing units (CPUs) products:</p>
+<p>Next a variable is created to store the website URL of interest. The example used here is lifeinformatica.com, a Spanish website that sells computer components. This project will focus on computer central processing unit (CPU) products:</p>
 
 </div>
 </div>
@@ -13131,7 +13131,7 @@ Urllib is a Python package that collects several modules for working with URLs:<
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Next the connection is opened and the HTML page from the URl is downloaded:</p>
+<p>From here the connection is opened and the HTML page from the URl is downloaded:</p>
 
 </div>
 </div>
@@ -13195,12 +13195,11 @@ Urllib is a Python package that collects several modules for working with URLs:<
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>A very useful way to check the HTML structure of a website is to use the Developer Tools built into most modern browsers. To access the Developer Tools, hit F12 on the keyboard. From here the inspector tool can be used to click on the data of interest. From here, the data is highlighted in the HTML structure:
-  <img
-  src="https://conanmercer.com/assets/minified/images/datascience/screenshot1.png"
-  alt="DevTools being used to find data in the HTML structure"
-/></p>
-
+  <p>A very useful way to check the HTML structure of a website is to use the Developer Tools built into most modern browsers. To access the Developer Tools, hit F12 on the keyboard. From here the inspector tool can be used to click on the data of interest. From here, the data is highlighted in the HTML structure:
+    <img
+    src="https://conanmercer.com/assets/minified/images/datascience/screenshot1.png"
+    alt="DevTools being used to find data in the HTML structure"
+  /></p>
 </div>
 </div>
 </div>
@@ -13271,8 +13270,8 @@ Urllib is a Python package that collects several modules for working with URLs:<
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Next the actual data extraction from the HTML structure. The data needed is the Manufacturer, Product Name, Speed of the CPU, and the Price.
-Idealy, the HTML structure would be constructed in a way that all the data needed is already seperated into elements. This is not the case for this website. Here, the data can be extracted by first finding the parts needed. Most of the parts are in the title of each container. From here, strings can be used to carefully pull out the data parts that are needed, in a systematic apporach, meaning that it works well for all the CPU products in the webpage.</p>
+<h3 id="Data-Extraction">Data Extraction<a class="anchor-link" href="#Data-Extraction">&#182;</a></h3><p>Next the actual data extraction from the HTML structure. The data needed is the Manufacturer, Product Name, Speed of the CPU, and the Price.
+Idealy, the HTML structure would be constructed in a way that all the data needed is already seperated into elements. This is not the case for this website. Here, the data can be extracted by first finding the parts needed. Most of the parts are in the title of each container. From here, strings can be used to carefully pull out the data parts that are needed, in a systematic approach, meaning that it works well for all the CPU products in the webpage.</p>
 
 </div>
 </div>
@@ -13283,37 +13282,33 @@ Idealy, the HTML structure would be constructed in a way that all the data neede
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">container</span> <span class="ow">in</span> <span class="n">containers</span><span class="p">:</span>
-
+    
+    <span class="c1">#Variables</span>
     <span class="n">element</span> <span class="o">=</span> <span class="n">container</span><span class="o">.</span><span class="n">findAll</span><span class="p">(</span><span class="s2">&quot;h2&quot;</span><span class="p">,</span> <span class="p">{</span><span class="s2">&quot;class&quot;</span><span class="p">:</span> <span class="s2">&quot;woocommerce-loop-product__title&quot;</span><span class="p">})[</span><span class="mi">0</span><span class="p">]</span>
+    <span class="n">split_word</span> <span class="o">=</span> <span class="s2">&quot;ghz&quot;</span>
+    <span class="n">amd</span> <span class="o">=</span> <span class="s2">&quot;amd&quot;</span>
+    <span class="n">intel</span> <span class="o">=</span> <span class="s2">&quot;intel&quot;</span> 
+    <span class="n">full_title</span> <span class="o">=</span> <span class="n">element</span><span class="o">.</span><span class="n">text</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> 
 
     <span class="c1">#Manufacturer</span>
-    <span class="n">manufacturer</span> <span class="o">=</span> <span class="n">element</span><span class="o">.</span><span class="n">text</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="p">,</span> <span class="mi">1</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
-
+    <span class="n">manufacturer</span> <span class="o">=</span> <span class="n">element</span><span class="o">.</span><span class="n">text</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span> <span class="mi">1</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
 
     <span class="c1">#Speed</span>
-    <span class="n">full_title</span> <span class="o">=</span> <span class="n">element</span><span class="o">.</span><span class="n">text</span> 
-    <span class="n">split_word</span> <span class="o">=</span> <span class="s1">&#39;GHz&#39;</span>
-    <span class="n">split_word2</span> <span class="o">=</span> <span class="s1">&#39;GHZ&#39;</span>  
-    <span class="k">if</span> <span class="n">manufacturer</span> <span class="o">==</span> <span class="s2">&quot;AMD&quot;</span> <span class="ow">and</span> <span class="n">split_word</span> <span class="ow">in</span> <span class="n">full_title</span> <span class="p">:</span>
+    <span class="k">if</span> <span class="n">manufacturer</span> <span class="o">==</span> <span class="n">amd</span> <span class="ow">and</span> <span class="n">split_word</span> <span class="ow">in</span> <span class="n">full_title</span> <span class="p">:</span>
         <span class="n">speed</span> <span class="o">=</span> <span class="n">full_title</span><span class="o">.</span><span class="n">partition</span><span class="p">(</span><span class="n">split_word</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="p">,</span> <span class="mi">4</span><span class="p">)[</span><span class="mi">4</span><span class="p">]</span> 
-    <span class="k">if</span> <span class="n">manufacturer</span> <span class="o">==</span> <span class="s2">&quot;AMD&quot;</span> <span class="ow">and</span> <span class="n">split_word2</span> <span class="ow">in</span> <span class="n">full_title</span> <span class="p">:</span>
-        <span class="n">speed</span> <span class="o">=</span> <span class="n">full_title</span><span class="o">.</span><span class="n">partition</span><span class="p">(</span><span class="n">split_word2</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="p">,</span> <span class="mi">4</span><span class="p">)[</span><span class="mi">4</span><span class="p">]</span> 
-    <span class="k">if</span> <span class="n">manufacturer</span> <span class="o">==</span> <span class="s2">&quot;Intel&quot;</span><span class="p">:</span>
-       <span class="n">speed</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="s1">&#39;([^\s]+)&#39;</span><span class="o">+</span><span class="n">split_word</span><span class="p">,</span> <span class="n">full_title</span><span class="p">)</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
-
+    <span class="k">if</span> <span class="n">manufacturer</span> <span class="o">==</span> <span class="n">intel</span><span class="p">:</span>
+        <span class="n">speed</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="s2">&quot;([^\s]+)&quot;</span><span class="o">+</span><span class="n">split_word</span><span class="p">,</span> <span class="n">full_title</span><span class="p">)</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
 
     <span class="c1">#Product Name</span>
-    <span class="n">speed2</span> <span class="o">=</span> <span class="n">full_title</span><span class="o">.</span><span class="n">partition</span><span class="p">(</span><span class="n">split_word</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="p">,</span> <span class="mi">4</span><span class="p">)[</span><span class="mi">4</span><span class="p">]</span>
-    <span class="k">if</span> <span class="n">manufacturer</span> <span class="o">==</span> <span class="s2">&quot;AMD&quot;</span><span class="p">:</span>
-        <span class="n">product_name</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="n">manufacturer</span><span class="o">+</span><span class="s1">&#39;(.*?)&#39;</span><span class="o">+</span><span class="n">speed2</span><span class="p">,</span> <span class="n">full_title</span><span class="p">)</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
-    <span class="k">elif</span> <span class="n">manufacturer</span> <span class="o">==</span> <span class="s2">&quot;Intel&quot;</span> <span class="ow">and</span> <span class="s2">&quot;núcleos&quot;</span> <span class="ow">in</span> <span class="n">full_title</span><span class="p">:</span>    
-        <span class="n">product_name</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="n">manufacturer</span><span class="o">+</span><span class="s1">&#39;(.*?)&#39;</span><span class="o">+</span><span class="s1">&#39;núcleos&#39;</span><span class="p">,</span> <span class="n">full_title</span><span class="p">)</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">1</span><span class="p">)[:</span><span class="o">-</span><span class="mi">3</span><span class="p">]</span>
-    <span class="k">else</span><span class="p">:</span> <span class="n">product_name</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="n">manufacturer</span><span class="o">+</span><span class="s1">&#39;(.*?)&#39;</span><span class="o">+</span><span class="n">speed2</span><span class="p">,</span> <span class="n">full_title</span><span class="p">)</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
-
+    <span class="k">if</span> <span class="n">manufacturer</span> <span class="o">==</span> <span class="n">amd</span><span class="p">:</span>
+        <span class="n">product_name</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="n">manufacturer</span><span class="o">+</span><span class="s2">&quot;(.*?)&quot;</span><span class="o">+</span><span class="n">speed</span><span class="p">,</span> <span class="n">full_title</span><span class="p">)</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+    <span class="k">elif</span> <span class="n">manufacturer</span> <span class="o">==</span> <span class="n">intel</span> <span class="ow">and</span> <span class="s2">&quot;núcleos&quot;</span> <span class="ow">in</span> <span class="n">full_title</span><span class="p">:</span>    
+        <span class="n">product_name</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="n">manufacturer</span><span class="o">+</span><span class="s2">&quot;(.*?)&quot;</span><span class="o">+</span><span class="s2">&quot;núcleos&quot;</span><span class="p">,</span> <span class="n">full_title</span><span class="p">)</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">1</span><span class="p">)[:</span><span class="o">-</span><span class="mi">3</span><span class="p">]</span>
 
     <span class="c1">#Price</span>
     <span class="n">price</span> <span class="o">=</span> <span class="n">container</span><span class="o">.</span><span class="n">findAll</span><span class="p">(</span><span class="s2">&quot;span&quot;</span><span class="p">,</span> <span class="p">{</span><span class="s2">&quot;class&quot;</span><span class="p">:</span> <span class="s2">&quot;woocommerce-Price-amount amount&quot;</span><span class="p">})[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">text</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;€&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;,&quot;</span><span class="p">,</span> <span class="s2">&quot;.&quot;</span><span class="p">)</span>
 
+    <span class="c1">#Write the data into respective columns</span>
     <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">manufacturer</span> <span class="o">+</span> <span class="s2">&quot;, &quot;</span> <span class="o">+</span> <span class="n">product_name</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;,&quot;</span><span class="p">,</span> <span class="s2">&quot;|&quot;</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;, &quot;</span> <span class="o">+</span> <span class="n">speed</span> <span class="o">+</span> <span class="s2">&quot;, &quot;</span> <span class="o">+</span> <span class="n">price</span> <span class="o">+</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
     
 <span class="c1"># Lastly, the file must be closed</span>
@@ -13328,7 +13323,8 @@ Idealy, the HTML structure would be constructed in a way that all the data neede
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Lastly the head() function is called to inspect the first 5 rows of the csv file that was closed in the above line. From this it is clear that the data has been scraped, parsed and ordered into the desired headers. For this, the head() function is very useful for quickly testing if the object has the right type of data in it:</p>
+<h4 id="Accounting-for-Upper-and-Lower-Case">Accounting for Upper and Lower Case<a class="anchor-link" href="#Accounting-for-Upper-and-Lower-Case">&#182;</a></h4><p>Often it is the case that data is not in a perfect state. In this example, some key words are written in different cases, such as "GHz" or "GHZ". To overcome this, all the text that searches are carried out on are made lower case, using .lower(). This is just one example of how to deal with anomalies in data scraping.</p>
+<h4 id="Checking-the-Output">Checking the Output<a class="anchor-link" href="#Checking-the-Output">&#182;</a></h4><p>Lastly, the head() function is called to inspect the first 5 rows of the csv file that was closed in the above line. From this it is clear that the data has been scraped, parsed and ordered into the desired headers. For this, the head() function is very useful for quickly testing if the object has the right type of data in it:</p>
 
 </div>
 </div>
@@ -13384,38 +13380,38 @@ Idealy, the HTML structure would be constructed in a way that all the data neede
   <tbody>
     <tr>
       <th>0</th>
-      <td>AMD</td>
-      <td>Ryzen 5 3600</td>
+      <td>amd</td>
+      <td>ryzen 5 3600</td>
       <td>4.2</td>
       <td>197.9</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>Intel</td>
-      <td>Core i7 10700</td>
-      <td>4.8</td>
-      <td>318.9</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>AMD</td>
-      <td>Ryzen 5 3400G</td>
+      <td>amd</td>
+      <td>ryzen 5 3400g</td>
       <td>4.2</td>
       <td>139.9</td>
     </tr>
     <tr>
+      <th>2</th>
+      <td>intel</td>
+      <td>core i7 10700</td>
+      <td>4.8</td>
+      <td>318.9</td>
+    </tr>
+    <tr>
       <th>3</th>
-      <td>Intel</td>
-      <td>Core i5 10400F</td>
-      <td>4.3</td>
-      <td>148.9</td>
+      <td>intel</td>
+      <td>core i7 10700</td>
+      <td>2.9</td>
+      <td>165.9</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>Intel</td>
-      <td>Core i5 10400</td>
-      <td>2.9</td>
-      <td>165.9</td>
+      <td>intel</td>
+      <td>core i5 10400f</td>
+      <td>4.3</td>
+      <td>148.9</td>
     </tr>
   </tbody>
 </table>
