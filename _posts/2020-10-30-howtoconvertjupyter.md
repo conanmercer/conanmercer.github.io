@@ -3,7 +3,7 @@ layout: post
 author: Conan Mercer
 title: "Jupyter Notebooks on Your Blog"
 categories: [blog, data science]
-tags: Data Science
+tags: data science
 ---
 
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
