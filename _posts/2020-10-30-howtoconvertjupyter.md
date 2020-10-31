@@ -2,7 +2,7 @@
 layout: post
 author: Conan Mercer
 title: "Jupyter Notebooks on Your Blog"
-categories: [blog, Data Science]
+categories: [blog, data science]
 tags: Data Science
 ---
 
