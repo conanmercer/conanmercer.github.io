@@ -19,7 +19,7 @@ tags: data science
 <div class="post-paragraph">
   <h1>{{ page.title }}</h1>
   <p><i>{{ page.date | date_to_string }} - {{ page.author }}</i></p>
-    <b>This Jupyter Notebook also resides on my GitHub - it can be viewed from <a href="https://github.com/ConanMercer/Web_Scraping/blob/master/WebScraper.ipynb" target="_blank">here</a>
+    <b>This Jupyter Notebook also resides on my GitHub - it can be viewed from <a href="https://github.com/ConanMercer/Web_Scraping/blob/master/WebScraper.ipynb" target="_blank">here</a></b>
 
 <div class="post-paragraph">
 
