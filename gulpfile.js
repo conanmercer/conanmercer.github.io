@@ -39,7 +39,7 @@ gulp.task('browser-sync', gulp.series('jekyll-build'), function() {
 /*
 * Compile and minify sass
 */
-gulp.task('sass', function() {
+gulp.task('sass', async function() {
   	gulp.src('src/styles/**/main.scss')
 		.pipe(plumber())
 		.pipe(sass())
@@ -50,7 +50,7 @@ gulp.task('sass', function() {
 /*
 * Compile fonts
 */
-gulp.task('fonts', function() {
+gulp.task('fonts', async function() {
 	gulp.src('src/fonts/**/*.{ttf,woff,woff2}')
 		.pipe(plumber())
 		.pipe(gulp.dest('assets/fonts/'));
