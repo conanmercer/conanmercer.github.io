@@ -110,7 +110,7 @@ At the time of building the AMD Ryzen 5 3600 was by far the best price to perfor
 It is by now well understood that Ryzen 2nd Gen, which the CPU for this build is, benefits significantly from fast RAM. Through a bit of research, I found that DDR4 3600 MHz with a timing of C16 or less is the best price to performance ratio for the Ryzen 3600 processor. That was easy, I bought the cheapest ram of this spec from Crucial, a reputable memory manufacturer. This RAM and CPU combination will make for racehorse speeds.
 
   <figure>
-  <img src="{{site.baseurl}}/assets/minified/images/computer/ram.png">
+  <img src="{{site.baseurl}}/assets/minified/images/computer/RAM.png">
   </figure>
 
 
