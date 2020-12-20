@@ -1,7 +1,7 @@
 {
   "name": "jekyll-themed-blog",
   "version": "1.0.0",
-  "description": "This is a simple Jekyll theme for a personal website.",
+  "description": "This is a Jekyll theme for my personal website.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
