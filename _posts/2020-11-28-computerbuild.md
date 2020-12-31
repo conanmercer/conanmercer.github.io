@@ -15,9 +15,9 @@ tags: electronics
   <h1>{{ page.title }}</h1>
   <p><i>{{ page.date | date_to_string }} - {{ page.author }}</i></p>
 
-  <figure>
+<figure>
   <img src="{{site.baseurl}}/assets/minified/images/computer/computer.png">
-  </figure>
+</figure>
 
 <h2>Motivation</h2>
 
@@ -95,7 +95,6 @@ My current computer was getting slow, unstable, and generally outdated. I had bu
   </tr>
 </table>
 
-
 <h3>Reasoning behind parts selection</h3>
 
 <h4>The Central Processing Unit</h4>
@@ -113,7 +112,6 @@ It is by now well understood that Ryzen 2nd Gen, which the CPU for this build is
   <img src="{{site.baseurl}}/assets/minified/images/computer/RAM.png">
   </figure>
 
-
 <h4>The Motherboard</h4>
 A motherboard is the "mother" of all components attached to it. For the motherboard, I wanted something with PCIe 4, so that a future upgrade of the graphics card would not be an issue, as most GPUs moving forward from 2020 will likely be PCIe 4. The critical feature of the new PCIe 4 version is that it doubles the bandwidth from the previous PCIe 3 generation. This means that PCIe 4 can theoretically hit approximately 32 gigabytes per second (GB/s) of data flowing in each direction, while PCIe 3.0 maxes out at around 16GB/s.
 <br>
@@ -124,7 +122,6 @@ I also wanted an M2 slot for a future boot SSD upgrade, and also RGB pin headers
 It is worth noting here that I needed to learn about XMP profiles in the motherboard BIOS for the RAM optimization. As the RAM used in this build is overclocked at a speed of 3600 MHz, it was not enough to just buy the RAM and press it into the Motherboard. Overclocked RAM basically means that it runs above standard DDR industry specifications. Anyway, once the system was posting, I entered the BIOS and selected XMP profile 1, the motherboard is good enough that it automatically provided me with an XMP profile to suit my RAM. I saved these settings and rebooted the computer, from here the RAM ran at its designed 3600 MHz.
 <br>
 Just to make sure, I tested the RAM stability by using the free software <a href="https://www.memtest86.com/" target="_blank">MemTest86</a>. I made a bootable USB drive of this software, ran it for one pass (about half an hour) and did not receive any memory errors. I could have ran the test for longer but at this point, I was satisfied the RAM was good and stable.
-
 
   <figure>
   <img src="{{site.baseurl}}/assets/minified/images/computer/motherboard.png">
@@ -204,7 +201,6 @@ The RAM received a benchmark of 97.2%, the boot SSD 91.8%.
 <br>
 The old graphics card benchmarked at 24.7%, which does not come as a surprise as this card was released in 2013 and is the only major component in this build that was reused from my previous build. For sure, the speed bottleneck is the GPU at this point in time. Thankfully, I can upgrade this component in the future when I want to, at ease.
 
-
 <h3>Conclusion</h3>
 
   <figure>
@@ -214,4 +210,3 @@ The old graphics card benchmarked at 24.7%, which does not come as a surprise as
 For around 700€ I managed to build a new computer that is fast and not too expensive. Some thought went into "future proofing", so this system can be easily upgraded with next generation graphics and faster boot drives in the foreseeable future. By reusing some old computer parts, the price was brought down significantly.
 <br>
 My next project for this computer will be a custom infrared temperature sensing system using a microcontroller and OLED screens. Together they will monitor the temperature of the intake and exhaust fans, stay tuned!
-
