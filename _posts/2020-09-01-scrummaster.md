@@ -34,7 +34,7 @@ Besides this, I also did the following:
 
 <ul>
  <li>took the free <a href="https://www.classmarker.com/online-test/start/?quiz=3qg5fac7589c0416" target="_blank">official Scrum OPEN</a> exam 15-20 times </li>
- <li>read the <a href="https://www.scrumguides.org/docs/scrumguide/v2017/2017-Scrum-Guide-US.pdf#zoom=100" target="_blank">Scrum Guide</a> fully, twice per week for 3 weeks </li>
+ <li>read the <a href="https://www.scrumguides.org/docs/scrumguide/v2020/2020-Scrum-Guide-US.pdf#zoom=100" target="_blank">Scrum Guide</a> fully, twice per week for 3 weeks </li>
  <li>took the PSM I Preparation Quiz from <a href="https://mlapshin.com/index.php/scrum-quizzes/sm-real-mode/" target="_blank">Mikhail Lapshin</a> 5 times </li>
  <li>read the <a href="https://www.scrum.org/resources/scrum-glossary" target="_blank">Scrum Glossary</a> and made sure I knew all the terms </li>
  <li>read and understood the <a href="https://www.scrum.org/professional-scrum-competencies" target="_blank">professional scrum competencies</a> </li>
