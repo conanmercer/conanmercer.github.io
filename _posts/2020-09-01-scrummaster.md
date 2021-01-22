@@ -33,7 +33,7 @@ Working in a company that is using the Scrum framework is helpful, however be ve
 Besides this, I also did the following:
 
 <ul>
- <li>took the free <a href="https://www.classmarker.com/online-test/start/?quiz=vek54a6ec10658ef" target="_blank">official Scrum OPEN</a> exam 15-20 times </li>
+ <li>took the free <a href="https://www.classmarker.com/online-test/start/?quiz=3qg5fac7589c0416" target="_blank">official Scrum OPEN</a> exam 15-20 times </li>
  <li>read the <a href="https://www.scrumguides.org/docs/scrumguide/v2017/2017-Scrum-Guide-US.pdf#zoom=100" target="_blank">Scrum Guide</a> fully, twice per week for 3 weeks </li>
  <li>took the PSM I Preparation Quiz from <a href="https://mlapshin.com/index.php/scrum-quizzes/sm-real-mode/" target="_blank">Mikhail Lapshin</a> 5 times </li>
  <li>read the <a href="https://www.scrum.org/resources/scrum-glossary" target="_blank">Scrum Glossary</a> and made sure I knew all the terms </li>
@@ -45,19 +45,17 @@ Besides this, I also did the following:
   <img src="{{site.baseurl}}/assets/minified/images/certification/study.png">
   </figure>
 
-In total, the above preparation took me about 1 month. 
+In total, the above preparation took me about 1 month.
 
 <h3>The Day of the Exam</h3>
 For about 5 hours before the exam, I read the guide twice, took mock exams and made sure I was in a relaxed mood in a quite place with low probability of being disturbed. I also went for a 40 minute run about 2 hours before the exam (this is not required! I love to run, see why I run <a href="{{ site.baseurl }}{% link _posts/2020-05-02-whyirun.md %}">here</a>).
 
-
 <h2>During the Exam</h2>
 
-You have exactly 60 minutes to complete all 80 questions. This gives you approximately 45 seconds to read, comprehend and answer each question. I finished all of the questions in about 40 minutes which gave me about 20 minutes to recheck any question that I had flagged. This helped me a lot. I highly recommend flagging questions when you take the exam. During the exam, if I was even slightly unsure I flagged the question for review. Once I reached the end, as quickly as possible, I reviewed those questions and in many cases I actually changed what I had originally selected for the answer. I did not have enough time to review all the questions. There is no doubt that the time limit is one of the most important things to consider before and during taking this exam. 
-<br> 
+You have exactly 60 minutes to complete all 80 questions. This gives you approximately 45 seconds to read, comprehend and answer each question. I finished all of the questions in about 40 minutes which gave me about 20 minutes to recheck any question that I had flagged. This helped me a lot. I highly recommend flagging questions when you take the exam. During the exam, if I was even slightly unsure I flagged the question for review. Once I reached the end, as quickly as possible, I reviewed those questions and in many cases I actually changed what I had originally selected for the answer. I did not have enough time to review all the questions. There is no doubt that the time limit is one of the most important things to consider before and during taking this exam.
+<br>
 To pass the exam it is required to score 85% or higher. This sets the bar high and does not allow much wiggle room for incorrect answers.
 I also had a full cup of water on hand as I got quite thirsty during the exam. It is important to think and concentrate fully on each question, brain power requires correct hydration!
-
 
 <h2>After the Exam</h2>
 
