@@ -30,12 +30,26 @@ In this post I offer some advice, tips and strategies to passing the exam, the f
   <img src="{{site.baseurl}}/assets/minified/images/certification/road3.png">
   </figure>
 
+<h2>Increased value</h2>
+
+The reasons why any qualification is valuable depends on many variables. It is widely accepted that if a very large number of people hold a certain qualification globally, its value is somewhat diminished. In the case of the Scrum Master certifications, many people hold the Professional Scrum Master I certification, compared to far less that hold the Professional Scrum Master II certification. To compare in terms of percentages, only 2.8% of people hold the PSM II compared to the PSM I.
+<br>
+Figure 1 below shows the latest certified count as of January 1st, 2021.
+
+  <figure>
+  <img src="{{site.baseurl}}/assets/minified/images/certification/psmcount.png">
+  <figcaption>Figure 1 - Professional Scrum Master Certified Count </figcaption>
+  </figure>
+
+These statistics are important to keep in mind when planning to take the Professional Scrum Master II certification. The reasons for less people holding the more advanced Professional Scrum Master II certification is likely to be multivariate. It is harder to pass, it is more expensive to take the exam, and perhaps most people are happy to hold the Professional Scrum Master I and not progress any further.
+
 <h2>Preparation</h2>
 
 Working in a company that is using the Scrum framework is helpful, however be very careful in this situation. Most company's do not use pure Scrum, they often use <a href="https://www.scrum.org/resources/what-scrumbut?gclid=EAIaIQobChMI7Ie8h_rE6wIVh_dRCh0DEgS9EAAYASAAEgImrPD_BwE" target="_blank">ScrumBut</a>. I have talked about the dangers of this in a previous post <a href="{{ site.baseurl }}{% link _posts/2020-09-01-scrummaster.md %}">here</a>.
 <br>
 I spent a lot more time on this exam than the first PSM 1 exam. I noted down any good ideas I had read in the books below, I then attempted to implement them as Scrum Master in the company I was working for at the time. I would watch and observe what worked and what did not work. Always, I referred back to the Scrum Guide regularly to check if what I was trying to implement was actually Scrum. I cannot stress the importance of this enough. The effective implementation of Scrum requires constant inspection, transparency and adaptation. If you feel yourself becoming complacent, quickly correct your course. Scrum is a learning process that arguably, never ends.
-
+<br>
+There are a lot of PSM 2 training programs available online and in person, these are often expensive, and in my opinion not necessary to pass the exam. Avoid these unless you have no working experience with Scrum.
 <br>
 Besides this, I also did the following:
 
@@ -91,11 +105,11 @@ To pass the exam it is required to score 85% or higher. This sets the bar high a
 
 After the exam you are sent an email with your score and a breakdown of areas for improvement. You do not receive specifics on what questions you failed and their correct answers, this is one of the many ways that the Scrum certification process is respected in industry. The integrity of this exam is high as a real exam question "bank" does not exist.
 <br>
-Your certificate is also searchable and verifiable by anyone via the Scrum.org website, cold hard proof of your success. You also receive a high quality pdf of your certificate, with your full name and the date you passed the exam, see Figure 1.
+Your certificate is also searchable and verifiable by anyone via the Scrum.org website, cold hard proof of your success. You also receive a high quality pdf of your certificate, with your full name and the date you passed the exam, see Figure 2.
 
   <figure>
   <img src="{{site.baseurl}}/assets/minified/images/certification/cert3.png">
-  <figcaption>Figure 1 - PSM2 Certificate </figcaption>
+  <figcaption>Figure 2 - PSM2 Certificate </figcaption>
   </figure>
 
 Once you have your certificate, the journey does not end here! Applying the Scrum framework in complex projects and organizations is a very challenging thing to do. The guide is short and easy to read but to fully comprehend it and apply it takes time, dedication and patience. I look forward to study for and take the PSM3 exam soon, but for now, Scrum on!
