@@ -26,7 +26,7 @@ tags: python basics
 
 <h2>Motivation</h2>
 
-This Jupyter Notebook is the first in my series on Python Basics. The goal is to become familiar with the basics of the Python programming lanuage, with particular focus on Strings.
+This Jupyter Notebook is the first in my series on Python Basics. The goal is to become familiar with the basics of the Python programming language, with particular focus on Strings.
 <br>
 <br>
 
