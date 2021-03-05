@@ -2,8 +2,8 @@
 layout: post
 author: Conan Mercer
 title: "Out for a Run with the President of Ireland"
-categories: [blog]
-tags: life
+categories: [running, sport]
+tags: running
 ---
 
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
