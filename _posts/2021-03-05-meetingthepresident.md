@@ -34,7 +34,7 @@ I was about 13 miles into the run, on the home straight. Bobbing up and down alo
   </figure>
 
 <p>
-Ireland is a geographically small isle. It has a famously rich culture, a friendly and hospitable place. One of the very great parts about living in Ireland is that most things seem within reach. There are very few countries in the world where you can just go out for a run and meet the Head of State, let alone quite rightly stop and have a conversation. I very much doubt that in the United States you could happen on Obama or Trump and stop for a chin wag without a small army descending on you.
+Ireland is a geographically small isle. It has a famously rich culture, a friendly and hospitable place. One of the very great parts about living in Ireland is that most things seem within reach. There are very few countries in the world where you can just go out for a run and meet the Head of State, let alone quite rightly stop and have a conversation. I very much doubt that in the United States you could happen on Obama or Trump and stop for a chinwag without a small army descending on you.
 </p>
 
   <figure>
