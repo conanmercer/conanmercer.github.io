@@ -1,7 +1,7 @@
 ---
 layout: post
 author: Conan Mercer
-title: "Guide to Setting Up a Power Efficient Plex Media Server"
+title: "Guide to Setting Up an Inexpensive Media Server"
 categories: [blog, Computer Building]
 tags: electronics
 ---
@@ -265,7 +265,7 @@ Since I have two SSDs, the second drive is most suited to backing up the boot dr
 <h2>Power Efficiency</h2>
 
 <p>
-Power efficiency was a large part of the design of this server build. To test for this, I used the <a href="https://www.teckinhome.com/sp22" target="_blank">TECKIN Smart Plug</a> to measure power consumption of the server in various states.
+Reducing the power consumption was a concern during the design of this server build. Mainly because the CPU used is quite power hungry by todays standards. To test for this, I used the <a href="https://www.teckinhome.com/sp22" target="_blank">TECKIN Smart Plug</a> to measure power consumption of the server in various states.
 </p>
 
 <p>
@@ -277,7 +277,6 @@ The server sleeps at about 5 watts, which compared to its idle state is a differ
 
 <img
     src="{{site.baseurl}}/assets/minified/images/computer/serverwatt.svg"
-    alt="triangle with all three sides equal"
     height="900"
     width="600" 
     />
@@ -290,7 +289,6 @@ In Raspberry Pi 4 B idles at about 2.7 watts, and under load at about 6.4 watts 
 
 <img
     src="{{site.baseurl}}/assets/minified/images/computer/seversleep.svg"
-    alt="triangle with all three sides equal"
     height="900"
     width="600" />
 
@@ -300,13 +298,12 @@ To test the server under load I used <a href="https://www.userbenchmark.com/" ta
 
 <img
     src="{{site.baseurl}}/assets/minified/images/computer/serverload.svg"
-    alt="triangle with all three sides equa"
     height="900"
     width="600" />
 
 <h2>Power Savings</h2>
 
-I live in Spain and the current price of electricity is 0,170105 €/kWh.
+The current price of electricity where I live is 0,170105 €/kWh.
 <br>
 By using WoL and putting the server to sleep for most of the day, on average this saves 188€ on the electric bill per year.
 
@@ -334,4 +331,6 @@ The media server works and is consuming as little power as possible for its hard
 
 <p>
 In the future I will add more storage space, and better 'nas' rated drives. I will also look into alternative operating systems, in particular one that supports WoL and efficient cross platform file sharing.
+<br>
+I may also look at undervolting or underclocking the current CPU, in an effort to bring down the power consumption. If that does not reduce the power significantly, I will also look into buying a cheap CPU that is less power hungry. It may be possible to remove the GPU to save power, as going forward it should be less necessary to connect to the server often.
 </p>
