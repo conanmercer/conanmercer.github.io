@@ -1,7 +1,6 @@
 - title: <i class="fas fa-home"></i> Home
   url: /index.html
-- title: <i class="fas fa-pencil-alt"></i> Projects
-  url: /blog
+- title: <i class="fas fa-pencil-alt"></i> Blog
 - title: <i class="fas fa-book-open"></i> Books
   url: /books
 - title: <i class="fas fa-camera-retro"></i> Photos
