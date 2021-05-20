@@ -84,5 +84,5 @@ The media server is now more power efficient, although admittedly newer hardware
 In the future I will look into buying older hardware that is more power efficient, mainly a CPU change (and perhaps a motherboard if the current architecture wont support the new CPU).
 </p>
 <p>
-I may also look at a Raspberry Pi based system to get the energy costs down. Although if I expand this server to do much more, the Pi may not have anough horses under the bonnet to supply what I would need.
+I may also look at a Raspberry Pi based system to get the energy costs down. Although if I expand this server to do much more, the Pi may not have enough horses under the bonnet to supply what I would need.
 </p>
