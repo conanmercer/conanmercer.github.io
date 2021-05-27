@@ -20,6 +20,10 @@ tags: sql
   <h1>{{ page.title }}</h1>
   <p><i>{{ page.date | date_to_string }} - {{ page.author }}</i></p>
 
+  <figure>
+  <img src="{{site.baseurl}}/assets/minified/images/stock/doors.jpg">
+  </figure>
+
 <h2>Motivation</h2>
 
 This Jupyter Notebook is the first in my series on PostgreSQL. The goal is to become familiar with the basic and more advanced forms of the Structured Query Language (SQL), with particular focus on Data Science applications. This guide uses a sample database called dvdrental, a common resource used to learn PostgreSQL, it can be downloaded from <a href="https://www.postgresqltutorial.com/postgresql-sample-database/" target="_blank">here</a>.
