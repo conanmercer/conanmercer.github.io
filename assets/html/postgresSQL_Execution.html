@@ -14357,8 +14357,8 @@ a.anchor-link {
 <p>The next examples compare the execution time of the <code>WHERE</code> statement versus not using it. 
 In this example using the <code>WHERE</code> statement, the planning time and execution time actually increases:</p>
 <ul>
-<li>When not using the <code>WHERE</code> statement, the planning time is <code>0.126</code> milliseconds, and <code>0.056</code> milliseconds</li>
-<li>Using the <code>WHERE</code> statement, the excution time is <code>2.094</code> milliseconds, and <code>1.553</code> milliseconds</li>
+<li>Using the <code>WHERE</code> statement, the planning time is <code>0.126</code> milliseconds, versus <code>0.056</code> milliseconds when not using the <code>WHERE</code> statement</li>
+<li>Using the <code>WHERE</code> statement, the excution time is <code>2.094</code> milliseconds, versus <code>1.553</code> milliseconds when not using the <code>WHERE</code> statement</li>
 </ul>
 <p>This means that the total estimated time can actually be less when returning more data if there are fewer steps in the execution plan.</p>
 
