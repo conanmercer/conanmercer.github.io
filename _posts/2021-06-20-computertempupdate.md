@@ -21,7 +21,7 @@ tags: electronics
 
 I had just built a new computer, blog post <a href="{{ site.baseurl }}{% link _posts/2020-11-28-computerbuild.md %}">here</a>, and decided to add a highly custom infrared temperature monitoring system. I have written about the circuit design and programing of the system microcontroller in a previous post <a href="{{ site.baseurl }}{% link _posts/2020-12-31-computertemp.md %}">here</a>. The last step was to install the system inside the computer case.
 
-<h4>The Sensor Placement</h4>
+<h3>The Sensor Placement</h3>
 
 The system has a total of three infrared temperature sensors. One can be seen in the image below. These sensors are highly accurate, and are contactless. The overall result is a clear picture of the temperature in different parts of the case. There is one pointed to the plastic intake fans, and one on each of the exhaust fans, at the top of the case and also at the back of the case.
 
