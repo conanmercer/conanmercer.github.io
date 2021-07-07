@@ -1,14 +1,19 @@
 <!DOCTYPE html>
+
 <head>
   <script src="https://kit.fontawesome.com/81b0e30b1f.js" crossorigin="anonymous"></script>
   <style>
-    a { color: black; } 
+    a {
+      color: black;
+    }
   </style>
 </head>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/konpa/devicon@df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+<link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/konpa/devicon@df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 <html lang="en">
 <main role="main">
   {% include head.html %}
+
   <body>
     {% include header.html %}
     {% include nav.html %}
@@ -16,21 +21,18 @@
       {{ content }}
       <div class="PageNavigation">
         {% if page.previous.url %}
-          <a class="prev" href="{{page.previous.url}}">&laquo; {{page.previous.title}}</a>
+        <a class="prev" href="{{page.previous.url}}">&laquo; {{page.previous.title}}</a>
         {% endif %}
         {% if page.next.url %}
-          <a class="next" href="{{page.next.url}}">{{page.next.title}} &raquo;</a>
+        <a class="next" href="{{page.next.url}}">{{page.next.title}} &raquo;</a>
         {% endif %}
       </div>
-
-    <section id="sharing">
-      {% include share.html %}
-    </section>
+      <section id="sharing">
+        {% include share.html %}
+      </section>
   </body>
-</section>
-{% include footer.html %}
+  </section>
+  {% include footer.html %}
 </main>
+
 </html>
-
-
-

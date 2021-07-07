@@ -1,9 +1,31 @@
-
 <ul class="PrimaryNav with-indicator">
   {% for item in site.data.navigation %}
-  <li class="Nav-item {% if item.url == page.url %} is-active 
-  {% elsif page.url != '/' and page.url contains item.url %} is-active 
-  {% endif %}">
+  <li
+    class="
+      Nav-item
+      {%
+      if
+      item.url
+      ==
+      page.url
+      %}
+      is-active
+      {%
+      elsif
+      page.url
+      !=
+      '/'
+      and
+      page.url
+      contains
+      item.url
+      %}
+      is-active
+      {%
+      endif
+      %}
+    "
+  >
     <a href="{{ item.url }}">{{ item.title }}</a>
   </li>
   {% endfor %}
