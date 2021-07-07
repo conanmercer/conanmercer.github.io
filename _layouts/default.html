@@ -1,25 +1,31 @@
 <!DOCTYPE html>
+
 <head>
   <script src="https://kit.fontawesome.com/81b0e30b1f.js" crossorigin="anonymous"></script>
-    <style>
-      a { color: black; } 
-    </style>
+  <style>
+    a {
+      color: black;
+    }
+  </style>
 </head>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/konpa/devicon@df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+<link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/konpa/devicon@df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 <html lang="en">
 <main role="main">
   {% include head.html %}
+
   <body>
     {% include header.html %}
     {% include nav.html %}
     {{ content }}
     <section id="about">
       {% include about.html %}
-    <section id="curriculum">
-      {% include curriculum.html %}
-    </section>
+      <section id="curriculum">
+        {% include curriculum.html %}
+      </section>
   </body>
-</section>
+  </section>
   {% include footer.html %}
 </main>
+
 </html>
