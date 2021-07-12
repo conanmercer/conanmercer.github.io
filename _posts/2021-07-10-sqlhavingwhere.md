@@ -26,7 +26,7 @@ tags: sql
 
 <h2>Motivation</h2>
 
-This Jupyter Notebook is the fourth in my series on PostgreSQL, the previous blog post can be found <a href="{{ site.baseurl }}{% link _posts/2021-06-04-sqlindex.md%}">here</a>. The goal of this post is to explain the difference between the HAVING and WHERE statements in. This guide uses a sample database called dvdrental, a common resource used to learn PostgreSQL, it can be downloaded from <a href="https://www.postgresqltutorial.com/postgresql-sample-database/" target="_blank">here</a>.
+This Jupyter Notebook is the fourth in my series on PostgreSQL, the previous blog post can be found <a href="{{ site.baseurl }}{% link _posts/2021-06-04-sqlindex.md%}">here</a>. The goal of this post is to explain the difference between the HAVING and WHERE statements in PostgreSQL. This guide uses a sample database called dvdrental, a common resource used to learn PostgreSQL, it can be downloaded from <a href="https://www.postgresqltutorial.com/postgresql-sample-database/" target="_blank">here</a>.
 <br>
 <br>
 
