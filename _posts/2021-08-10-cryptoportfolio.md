@@ -40,7 +40,7 @@ The data is stored in a separate csv file (data.csv) that holds all of the data 
 
 <div class="post-paragraph">
 
-<iframe src="{{site.baseurl}}/assets/html/Crypto_analysis.html" width="100%" scrolling="no" frameBorder="0" onload="resizeIframe(this)"></iframe>
+<iframe src="{{site.baseurl}}/assets/html/Crypto_Analysis.html" width="100%" scrolling="no" frameBorder="0" onload="resizeIframe(this)"></iframe>
 
 </div>
 
