@@ -27,7 +27,7 @@ tags: crypto
 <h2>Using Python to Analyse your Crypto Currency Portfolio</h2>
 
 <p>
-Crypto currencies such as Bitcoin and Ethereum are growing in popularity and market capitalization. This post looks at how to analyse your personal portfolio using Python, which is useful to gain of a view of your entire portfolio, as it may be spread out over time and be located in different wallets or platforms. The script displays the total percentage gain or loss of the portfolio, as well as calculations on what the value might be after capital gains tax is taken into consideration. The script also provides up to date charts on various crypto currency prices.
+Crypto currencies such as Bitcoin and Ethereum are growing in popularity and market capitalization. This post looks at how to analyse your personal portfolio using Python, which is useful to gain a view of your entire portfolio, as it may be spread out over time and be located in different wallets or platforms. The script displays the total percentage gain or loss of the portfolio, as well as calculations on what the value might be after capital gains tax is taken into consideration. The script also provides up to date charts on various crypto currency prices.
 </p>
 
 <p>
