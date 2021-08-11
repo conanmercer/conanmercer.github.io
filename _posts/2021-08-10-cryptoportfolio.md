@@ -38,6 +38,8 @@ The information in this blog post does not represent my, or anyone elses, crypto
 The data is stored in a separate csv file (data.csv) that holds all of the data required for the Python script to run. This data file can be modified to match your own portfolio of crypto currency.
 </p>
 
+<b>This Jupyter Notebook also resides on my GitHub - it can be viewed from <a href="https://github.com/ConanMercer/CryptoPortfolio/blob/main/Crypto_Analysis.ipynb" target="_blank">here</a></b>
+
 <div class="post-paragraph">
 
 <iframe src="{{site.baseurl}}/assets/html/Crypto_Analysis.html" width="100%" scrolling="no" frameBorder="0" onload="resizeIframe(this)"></iframe>
