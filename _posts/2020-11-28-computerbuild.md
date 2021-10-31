@@ -45,7 +45,7 @@ My current computer was getting slow, unstable, and generally outdated. I had bu
   </tr>
   <tr>
     <td>RAM</td>
-    <td>Crucial Ballistix 3600 MHz, DDR4, CL16</td>
+    <td>16gb Crucial Ballistix 3600 MHz, DDR4, CL16</td>
     <td>76.22</td>
   </tr>
   <tr>
