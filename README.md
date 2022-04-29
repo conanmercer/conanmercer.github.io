@@ -19,6 +19,3 @@ Live at https://conanmercer.com/
 - Heavily adapted from the original theme by Mauricio Urraco - https://github.com/murraco
 - Particle code from - https://github.com/nrandecker
 - Much appreciated!
-
-
-
