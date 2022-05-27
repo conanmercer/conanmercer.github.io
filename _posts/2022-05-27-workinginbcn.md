@@ -118,7 +118,7 @@ The lifestyle in Catalonia is excellent. With a very forgiving climate and some 
 </p>
 
 <p>
-The cost of living is also low when compared Catalonia to its European counterparts. Some say rents are high, and it is true that rent has risen in Barcelona in the past 5 years. However, rents are still far below what you would expect to pay in other European cities of similar size, Paris, Dublin, and Berlin for example.
+The cost of living is also low when comparing Catalonia to its European counterparts. Some say rents are high, and it is true that rent has risen in Barcelona in the past 5 years. However, rents are still far below what you would expect to pay in other European cities of similar size, Paris, Dublin, and Berlin for example.
 </p>
 
 
