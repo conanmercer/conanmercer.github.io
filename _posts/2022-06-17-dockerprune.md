@@ -2,8 +2,8 @@
 layout: post
 author: Conan Mercer
 title: "Prune Docker Automatically with a Weekly Cron Job"
-categories: [blog, docker]
-tags: dataengineering
+categories: [blog, python]
+tags: data engineering
 ---
 
 <div class="post-paragraph">
