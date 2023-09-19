@@ -7,7 +7,7 @@ description: Resume and Blog
 # User settings
 username: Conan Mercer
 user_description: <p> <b><span style="color:#9a4837;">I am a Chemistry Ph.D</span></b> now traveling the path of a <b><span style="color:#9a4837;">Site Reliability Engineer.</span></b> I thrive in challenging, constantly changing environments. Lately I have been immersed in <b><span style="color:#9a4837;">Site Reliability Engineering</span></b>, helping to build a great SaaS company at <a href="https://www.sage.com/en-gb/" target="_blank">Sage</a>. I design and implement data pipelines on top of AWS infrastructure.</b> I have over <b><span style="color:#9a4837;">5 year’s experience</span></b> in the management of international technology projects of a complex nature. I have strong technical abilities in Python, AWS and software development tooling. During my Ph.D I acquired solid skills in <b><span style="color:#9a4837;">data science, public speaking and project management</span></b>. I have a proven ability to apply the latest research and techniques to solve a variety of scientific problems.
-user_title: Senior Site Reliability Engineer
+user_title: Site Reliability Engineer
 email: conan.mercer1@gmail.com
 
 # Google-analytics
