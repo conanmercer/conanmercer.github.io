@@ -13,6 +13,13 @@ Live at https://conanmercer.com/
 ![](https://img.shields.io/badge/devicon-✓-blue.svg)
 ![](https://img.shields.io/badge/gulp-✓-blue.svg)
 
+# Docker
+
+This website is developed locally using Docker, so there is no need to have any version of Ruby or Bundle installed on your system.
+
+To build and serve the website from Docker running in WSL, run this command in the Linux terminal in the root directory of this repo:
+
+./local_serve.sh serve
 
 # Recognition
 
