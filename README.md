@@ -19,6 +19,8 @@ This website is developed locally using Docker, so there is no need to have any 
 
 To build and serve the website from Docker running in WSL, run this command in the Linux terminal in the root directory of this repo:
 
+./local_serve.sh build
+
 ./local_serve.sh serve
 
 # Recognition
