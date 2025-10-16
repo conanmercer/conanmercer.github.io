@@ -4,25 +4,29 @@
   "description": "This is a Jekyll theme for my personal website.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "gulp css && gulp minify-js",
+    "dev": "gulp serve",
+    "clean": "rm -rf _site node_modules/.cache",
+    "update": "npm update"
   },
   "author": "Conan Mercer <conan.mercer1@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "browser-sync": "^3.0.2",
-    "glob-parent": "^5.1.2",
-    "got": "^11.8.6",
+    "browser-sync": "^3.0.3",
+    "glob-parent": "^6.0.2",
+    "got": "^13.0.0",
     "gulp": "^4.0.2",
     "gulp-concat": "^2.6.1",
     "gulp-csso": "^4.0.1",
-    "gulp-imagemin": "^9.0.0",
+    "gulp-imagemin": "^9.1.0",
     "gulp-plumber": "^1.2.1",
     "gulp-sass": "^5.1.0",
     "gulp-uglify": "^3.0.2",
     "http-cache-semantics": "^4.1.1",
-    "semver-regex": "^3.1.4"
+    "semver-regex": "^4.0.5"
   },
   "devDependencies": {
-    "sass": "^1.62.1"
+    "sass": "^1.80.0"
   }
 }
