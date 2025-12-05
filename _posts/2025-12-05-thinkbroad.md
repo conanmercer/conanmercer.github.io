@@ -10,10 +10,6 @@ tags: thinking
   <h1>{{ page.title }}</h1>
   <p><i>{{ page.date | date_to_string }} - {{ page.author }}</i></p>
 
-  <figure>
-  <img src="{{site.baseurl}}/assets/minified/images/aws/sqs.png">
-  </figure>
-
 <h2>Some Non-Traditional Approaches</h2>
 
 People can become obsessed with becoming an expert in their field, actively avoiding learning from or in other disciplines. I think this is a mistake. While you can, need to, and should continue to learn in your specific domain, what is often overlooked are aspects of other disciplines. For example, human psychology. A lot can be learned and transferred into leading software engineering teams by studying other disciplines. And it does not need to take much. In most disciplines, there are three or four absolutely core concepts that have been very well documented. This means that if you read three or four books on the main concepts, you will gain a meaningful understanding.
