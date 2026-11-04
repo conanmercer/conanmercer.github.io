@@ -1,137 +1,116 @@
-$menu-items: 4;
-$background-color: white;
-$indicator-color: $timeline;
-$transition-speed: 1s;
-
-$width: 100% / $menu-items;
-$menu-items-loop-offset: $menu-items - 1;
+.site-nav {
+  width: calc(100% - 32px);
+  max-width: 640px;
+  box-sizing: border-box;
+  margin: 24px auto 12px;
+  padding: 6px;
+  border: 1px solid rgba($main, 0.09);
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0 4px 20px rgba($main, 0.05);
+  font-family: "Montserrat", sans-serif;
+}
 
 .PrimaryNav {
-  @extend %cf;
-  list-style-type: none;
-  margin: 0 auto;
-  max-width: 720px;
+  position: relative;
+  isolation: isolate;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(0, 1fr);
+  gap: 4px;
+  list-style: none;
+  margin: 0;
   padding: 0;
-  overflow: visible;
-  background-color: white;
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: var(--indicator-width, 0px);
+    transform: translateX(var(--indicator-x, 0px));
+    border-radius: 14px;
+    background: rgba($timeline, 0.09);
+    pointer-events: none;
+  }
+
+  &.is-ready::before {
+    transition: transform 280ms cubic-bezier(0.22, 1, 0.36, 1),
+      width 280ms cubic-bezier(0.22, 1, 0.36, 1);
+  }
 }
 
 .Nav-item {
-  background-color: white;
-  display: block;
-  float: left;
+  min-width: 0;
   margin: 0;
   padding: 0;
-  width: $width; //dynamic width
-  text-align: center;
 
-  &:first-child {
-    border-radius: 3px 0 0 3px;
-  }
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    min-height: 48px;
+    box-sizing: border-box;
+    padding: 12px 10px;
+    border-radius: 14px;
+    color: $sec;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1.4;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+    transition: color 180ms ease, background-color 180ms ease;
 
-  &:last-child {
-    border-radius: 0 3px 3px 0;
+    i {
+      width: 18px;
+      font-size: 16px;
+      text-align: center;
+    }
+
+    &:hover,
+    &:focus-visible {
+      color: $timeline;
+      background: rgba($timeline, 0.06);
+    }
+
+    &:focus-visible {
+      outline: 2px solid $timeline;
+      outline-offset: 2px;
+    }
   }
 
   &.is-active a {
-    color: $indicator-color;
-  }
-
-  a {
-    color: black;
-    text-align: center;
-    display: block;
-    padding: 14px 16px;
-    text-decoration: none;
-
-    &:hover {
-      color: $indicator-color;
-    }
+    color: $timeline;
+    background: rgba($timeline, 0.09);
   }
 }
 
-// indicator
-.with-indicator {
-  position: relative;
-  z-index: 0;
+.PrimaryNav.is-ready .Nav-item a {
+  background: transparent;
+}
 
-  .Nav-item {
-    &:last-child {
-      &:before,
-      &:after {
-        content: "";
-        display: block;
-        position: absolute;
-        pointer-events: none;
-        transition: left #{$transition-speed} ease;
-      }
-      &:before {
-        border: 6px solid transparent;
-        border-top-color: $indicator-color;
-        width: 0;
-        height: 0;
-        top: 0;
-        left: ($width/2);
-        margin-left: -3px;
-      }
-      &:after {
-        background: $indicator-color;
-        top: -6px;
-        bottom: -6px;
-        left: 0;
-        width: $width;
-        z-index: -1;
-      }
-    }
+@media (max-width: 480px) {
+  .site-nav {
+    width: calc(100% - 24px);
+    margin-top: 16px;
+    padding: 5px;
+    border-radius: 18px;
   }
 
-  @for $i from 1 through $menu-items-loop-offset {
-    // when the Nav item "is active", make the indicator line up with the navigation item.
-    .Nav-item:nth-child(#{$i}).is-active ~ .Nav-item:last-child:after {
-      left: ($width * $i)-$width;
-    }
-    .Nav-item:nth-child(#{$i}).is-active ~ .Nav-item:last-child:before {
-      left: ($width * $i)+
-        ($width/2)-$width; // this ensures the triangle lines up to the menu.
-    }
-  }
-
-  // movement
-  @for $i from 1 through $menu-items-loop-offset {
-    // We have to use !important to make the hovers overide if the last:child is the active or hovered
-    .Nav-item:nth-child(#{$i}):hover ~ .Nav-item:last-child:after {
-      left: ($width * $i)-$width !important;
-    }
-
-    .Nav-item:nth-child(#{$i}):hover ~ .Nav-item:last-child:before {
-      left: ($width * $i)+ ($width/2)-$width !important;
-    }
-  }
-
-  // this could be nested in the original .Nav-item
-  .Nav-item {
-    &:last-child {
-      // make sure the last-child talks to itself
-      &:hover,
-      &.is-active {
-        &:before {
-          // we have to use important because the sibling selctor is more specific.
-          left: (100%-$width)+ ($width/2) !important;
-        }
-        &:after {
-          left: 100%-$width !important;
-        }
-      }
-    }
+  .Nav-item a {
+    flex-direction: column;
+    gap: 6px;
+    padding: 10px 4px;
+    font-size: 11px;
   }
 }
 
-// Global resets
-%cf:before,
-%cf:after {
-  content: " ";
-  display: table;
-}
-%cf:after {
-  clear: both;
+@media (prefers-reduced-motion: reduce) {
+  .PrimaryNav.is-ready::before,
+  .Nav-item a {
+    transition: none;
+  }
 }
