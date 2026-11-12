@@ -1,0 +1,135 @@
+:root {
+  color-scheme: light;
+  --page-background: #fff;
+  --page-text: #333;
+  --page-heading: #333;
+  --page-link: #000;
+  --surface: #fff;
+  --theme-border: #dedfe2;
+  --theme-accent: #9a4837;
+  --theme-highlight: rgba(154, 72, 55, 0.09);
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --page-background: #171b21;
+  --page-text: #d7dce3;
+  --page-heading: #f0f2f5;
+  --page-link: #efb09d;
+  --surface: #232931;
+  --theme-border: #424b58;
+  --theme-accent: #efb09d;
+  --theme-highlight: rgba(239, 176, 157, 0.12);
+}
+
+html body {
+  background: var(--page-background);
+  color: var(--page-text);
+}
+
+html h1,
+html h2,
+html h3,
+html h4,
+html strong {
+  color: var(--page-heading);
+}
+
+html a,
+html .PageNavigation a,
+html .PageNavigation .next {
+  color: var(--page-link);
+}
+
+.theme-controls {
+  display: flex;
+  justify-content: flex-end;
+  width: calc(100% - 32px);
+  max-width: 640px;
+  margin: 0 auto 16px;
+}
+
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;
+  padding: 8px 14px;
+  border: 1px solid var(--theme-border);
+  border-radius: 14px;
+  background: var(--surface);
+  color: var(--page-text);
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  cursor: pointer;
+
+  &[hidden] {
+    display: none;
+  }
+
+  &:hover,
+  &[aria-pressed="true"] {
+    background: var(--theme-highlight);
+    color: var(--theme-accent);
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--theme-accent);
+    outline-offset: 3px;
+  }
+}
+
+html[data-theme="dark"] {
+  .site-nav,
+  .tag,
+  .flag,
+  .desc,
+  pre,
+  .hljs {
+    background: var(--surface);
+    color: var(--page-text);
+  }
+
+  .site-nav,
+  #post-nav {
+    border-color: var(--theme-border);
+  }
+
+  .Nav-item a {
+    color: var(--page-text);
+  }
+
+  .Nav-item.is-active a,
+  .Nav-item a:hover,
+  .Nav-item a:focus-visible {
+    color: var(--theme-accent);
+  }
+
+  .PrimaryNav::before {
+    background: var(--theme-highlight);
+  }
+
+  .Nav-item a:focus-visible {
+    outline-color: var(--theme-accent);
+  }
+
+  .direction-l .flag::after,
+  .direction-r .flag::after {
+    border-bottom-color: var(--surface);
+  }
+
+  @media (min-width: 768px) {
+    .direction-l .flag::after,
+    .direction-r .flag::after {
+      border-bottom-color: transparent;
+    }
+
+    .direction-l .flag::after {
+      border-left-color: var(--surface);
+    }
+
+    .direction-r .flag::after {
+      border-right-color: var(--surface);
+    }
+  }
+}

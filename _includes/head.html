@@ -2,6 +2,18 @@
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script>
+    (function () {
+      var theme;
+      try {
+        theme = localStorage.getItem("theme");
+      } catch (error) {}
+      if (theme !== "light" && theme !== "dark") {
+        theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+      }
+      document.documentElement.dataset.theme = theme;
+    })();
+  </script>
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?" />
   <title>
     {% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}
